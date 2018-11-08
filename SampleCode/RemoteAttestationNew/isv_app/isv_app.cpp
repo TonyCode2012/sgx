@@ -255,7 +255,7 @@ int main(int argc, char* argv[])
         // The ISV decides whether to support this extended epid group id.
         fprintf(OUTPUT, "\nSending msg0 to remote attestation service provider.\n");
 
-        // {{{send msg0 to sp
+        // send msg0 to sp {{{
         ret = ra_network_send_receive("http://SampleServiceProvider.intel.com/",
             p_msg0_full,
             &p_msg0_resp_full);
